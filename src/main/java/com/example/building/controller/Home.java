@@ -6,14 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Home {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String first(){
-        return "hello Tushar";
+        return "This site is under maintenance";
     }
 
-    @GetMapping("/mangesh")
-    public String helloMangesh(){
-        return "<b>hello Mangesh..!! this is my first deployment of spring boot application using CICD pipeline.." +
-                "And this awesome!!</b>";
+    @GetMapping("/mayuri")
+    public String helloMayuri(){
+        return "<b>hello Mayuri..!! You're stupid</b>";
     }
 }
