@@ -10,4 +10,10 @@ public class Home {
     public String first(){
         return "hello Tushar";
     }
+
+    @GetMapping("/mangesh")
+    public String helloMangesh(){
+        return "<b>hello Mangesh..!! this is my first deployment of spring boot application using CICD pipeline.." +
+                "And this awesome!!</b>";
+    }
 }
