@@ -37,3 +37,6 @@ jobs:
       env:
         DEPENDENCY_GRAPH_URL: ${{ steps.capture_dependency_info.outputs.DEPENDENCY_GRAPH_URL }}
         DEPENDENCY_GRAPH_AUTH_TOKEN: ${{ steps.capture_dependency_info.outputs.DEPENDENCY_GRAPH_AUTH_TOKEN }}
+
+    - name: Execute Jar File
+      run: sudo kill -9 `sudo lsof -t -i:80` & sudo java -jar /home/ubuntu/actions-runner/_work/spring-spring/spring-spring/target/demo-0.0.1-SNAPSHOT.jar &
